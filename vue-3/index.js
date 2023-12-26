@@ -7,6 +7,13 @@ module.exports = {
   extends: [
     "../base",
     "plugin:vue/vue3-essential",
-    "plugin:@conarti/feature-sliced/recommended",
+    "@feature-sliced",
   ],
+  settings: {
+    "import/resolver": {
+      typescript: {
+        alwaysTryTypes: true,
+      },
+    },
+  },
 };
