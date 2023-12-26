@@ -58,6 +58,7 @@ module.exports = {
     "vue/comma-dangle": "off",
     "vue/attributes-order": "error",
     "vue/max-len": "off",
+    "vue/require-v-for-key": "off",
   },
 
   overrides: [
