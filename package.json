@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-avrora-vue",
-  "version": "1.0.14",
+  "version": "1.0.16",
   "description": "ESLint configuration package for Vue 2 and Vue 3 based on Airbnb config",
   "main": "index.js",
   "scripts": {
