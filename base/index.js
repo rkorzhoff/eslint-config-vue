@@ -58,7 +58,6 @@ module.exports = {
     "vue/comma-dangle": "off",
     "vue/attributes-order": "error",
     "vue/max-len": "off",
-    "vue/require-v-for-key": "off",
   },
 
   overrides: [
@@ -67,6 +66,7 @@ module.exports = {
       rules: {
         "perfectionist/sort-imports": "off",
         "perfectionist/sort-vue-attributes": "off",
+        "vue/require-v-for-key": "off",
         "vuejs-accessibility/alt-text": "off",
         "vuejs-accessibility/anchor-has-content": "off",
         "vuejs-accessibility/aria-props": "off",
