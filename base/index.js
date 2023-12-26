@@ -41,6 +41,7 @@ module.exports = {
     "no-throw-literal": "off",
     "tsdoc/syntax": "warn",
     "arrow-body-style": "off",
+    "implicit-arrow-linebreak": "off",
 
     //import
     "import/prefer-default-export": "off",
