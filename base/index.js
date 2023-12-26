@@ -42,6 +42,7 @@ module.exports = {
     "tsdoc/syntax": "warn",
     "arrow-body-style": "off",
     "implicit-arrow-linebreak": "off",
+    "no-plusplus": ["error", { "allowForLoopAfterthoughts": true }],
 
     //import
     "import/prefer-default-export": "off",
