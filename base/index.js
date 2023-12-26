@@ -52,6 +52,7 @@ module.exports = {
     "@typescript-eslint/indent": "off",
     "@typescript-eslint/comma-dangle": "off",
     "@typescript-eslint/quotes": "off",
+    "@typescript-eslint/no-use-before-define": "off",
 
     // vue
     "vue/html-indent": "off",
