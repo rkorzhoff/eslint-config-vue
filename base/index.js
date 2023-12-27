@@ -42,8 +42,10 @@ module.exports = {
     "tsdoc/syntax": "warn",
     "arrow-body-style": "off",
     "implicit-arrow-linebreak": "off",
-    "no-plusplus": ["error", { "allowForLoopAfterthoughts": true }],
-
+    "no-plusplus": ["error", { allowForLoopAfterthoughts: true }],
+    "function-paren-newline": "off",
+    "object-curly-newline": "off",
+    
     //import
     "import/prefer-default-export": "off",
     "import/no-cycle": "off",
@@ -62,6 +64,7 @@ module.exports = {
     "vue/attributes-order": "error",
     "vue/max-len": "off",
     "vue/require-v-for-key": "off",
+    "vue/valid-v-for": "off",
   },
 
   overrides: [
