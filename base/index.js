@@ -29,6 +29,7 @@ module.exports = {
     "perfectionist",
     "sonarjs",
     "eslint-plugin-tsdoc",
+    "ts-ignore-limit",
   ],
 
   rules: {
@@ -45,11 +46,17 @@ module.exports = {
     "no-plusplus": ["error", { allowForLoopAfterthoughts: true }],
     "function-paren-newline": "off",
     "object-curly-newline": "off",
-    
+    "operator-linebreak": "off",
+    "consistent-return": "off",
+    "no-underscore-dangle": "off",
+    "ts-ignore-limit/no-excess-ts-ignore":  ['error', 5],
+
     //import
     "import/prefer-default-export": "off",
     "import/no-cycle": "off",
     "import/no-extraneous-dependencies": "off",
+
+    "perfectionist/sort-imports": "off",
 
     // @typescript-eslint
     "@typescript-eslint/no-throw-literal": "off",
@@ -65,6 +72,7 @@ module.exports = {
     "vue/max-len": "off",
     "vue/require-v-for-key": "off",
     "vue/valid-v-for": "off",
+    "vue/html-button-has-type": "off",
   },
 
   overrides: [
