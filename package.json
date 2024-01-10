@@ -1,7 +1,7 @@
 {
-  "name": "eslint-config-avrora-vue",
-  "version": "2.0.7",
-  "description": "ESLint configuration package for Vue 2 and Vue 3 based on Airbnb config",
+  "name": "eslint-config-aurora-vue",
+  "version": "1.0.0",
+  "description": "ESLint configuration for Vue 2, Vue 3, and for Vue 3 + Feature-Sliced Design projects, based on Airbnb config",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -19,7 +19,8 @@
     "eslint",
     "vue",
     "vue2",
-    "vue3"
+    "vue3",
+    "feature-sliced design"
   ],
   "author": "rkorzhoff",
   "license": "ISC",
