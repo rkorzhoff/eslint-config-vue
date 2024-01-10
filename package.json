@@ -13,7 +13,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/rkorzhoff/eslint-config-vue"
+    "url": "https://github.com/rkorzhoff/eslint-config-vue"
   },
   "keywords": [
     "eslint",

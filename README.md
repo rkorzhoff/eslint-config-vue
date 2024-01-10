@@ -1,6 +1,9 @@
 # ESLint config for Vue projects
 ESLint configuration for Vue 2, Vue 3, and for Vue 3 + Feature-Sliced Design projects, based on Airbnb config.
-
+## Installation
+```
+npm install eslint-config-aurora-vue --save-dev
+```
 ## Usage
 For Vue 2 projects:
 ```js
