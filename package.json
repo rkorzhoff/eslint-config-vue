@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-aurora-vue",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "ESLint configuration for Vue 2, Vue 3, and for Vue 3 + Feature-Sliced Design projects, based on Airbnb config",
   "main": "index.js",
   "scripts": {
