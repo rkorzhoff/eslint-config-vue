@@ -9,7 +9,6 @@ module.exports = {
     "airbnb-base",
     "plugin:import/recommended",
     "plugin:import/typescript",
-    "plugin:perfectionist/recommended-natural",
     "@vue/eslint-config-airbnb-with-typescript",
     "plugin:sonarjs/recommended",
   ],
@@ -25,7 +24,6 @@ module.exports = {
     "vue",
     "eslint-comments",
     "promise",
-    "perfectionist",
     "sonarjs",
     "eslint-plugin-tsdoc",
     "ts-ignore-limit",
@@ -55,8 +53,6 @@ module.exports = {
     "import/no-cycle": "off",
     "import/no-extraneous-dependencies": "off",
 
-    "perfectionist/sort-imports": "off",
-
     // @typescript-eslint
     "@typescript-eslint/no-throw-literal": "off",
     "@typescript-eslint/indent": "off",
@@ -79,8 +75,6 @@ module.exports = {
     {
       files: ["**/*.vue"],
       rules: {
-        "perfectionist/sort-imports": "off",
-        "perfectionist/sort-vue-attributes": "off",
         "vue/require-v-for-key": "off",
         "vuejs-accessibility/alt-text": "off",
         "vuejs-accessibility/anchor-has-content": "off",
