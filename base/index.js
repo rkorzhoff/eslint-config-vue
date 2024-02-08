@@ -46,7 +46,14 @@ module.exports = {
     "operator-linebreak": "off",
     "consistent-return": "off",
     "no-underscore-dangle": "off",
-    "ts-ignore-limit/no-excess-ts-ignore":  ['error', 5],
+    indent: "off",
+    "no-unused-vars": "off",
+    "no-shadow": "off",
+    semi: "off",
+    "no-extra-semi": "off",
+    "no-spaced-func": "off",
+    "func-call-spacing": "off",
+    "default-param-last": "off",
 
     //import
     "import/prefer-default-export": "off",
@@ -59,6 +66,31 @@ module.exports = {
     "@typescript-eslint/comma-dangle": "off",
     "@typescript-eslint/quotes": "off",
     "@typescript-eslint/no-use-before-define": "off",
+    "@typescript-eslint/no-shadow": ["error"],
+    "@typescript-eslint/no-explicit-any": ["error"],
+    "@typescript-eslint/no-explicit-any": ["error"],
+    "@typescript-eslint/ban-ts-comment": [
+      "error",
+      {
+        "ts-expect-error": "allow-with-description",
+      },
+    ],
+    "@typescript-eslint/ban-types": "error",
+    "@typescript-eslint/class-literal-property-style": "error",
+    "@typescript-eslint/consistent-generic-constructors": "error",
+    "@typescript-eslint/consistent-indexed-object-style": "error",
+    "@typescript-eslint/consistent-type-imports": [
+      "error",
+      {
+        prefer: "type-imports",
+        fixStyle: "inline-type-imports",
+      },
+    ],
+    "@typescript-eslint/default-param-last": "error",
+    "@typescript-eslint/no-confusing-non-null-assertion": "error",
+    "@typescript-eslint/no-duplicate-enum-values": "error",
+    "@typescript-eslint/no-duplicate-type-constituents": "error",
+    "@typescript-eslint/no-unused-vars": ["error", { argsIgnorePattern: "^_" }],
     "@typescript-eslint/semi": "off",
 
     // vue
@@ -69,6 +101,12 @@ module.exports = {
     "vue/require-v-for-key": "off",
     "vue/valid-v-for": "off",
     "vue/html-button-has-type": "off",
+    "vue/block-order": [
+      "error",
+      {
+        order: ["script", "template", "style"],
+      },
+    ],
   },
 
   overrides: [
@@ -105,7 +143,6 @@ module.exports = {
     "components.d.ts",
     "auto-imports.d.ts",
     "*.test.*",
-    "*.testData.*",
     ".helm/*",
     "*.yaml",
     "@types/*",
