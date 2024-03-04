@@ -1,15 +1,14 @@
 {
   "name": "eslint-config-aurora-vue",
-  "version": "1.0.4",
-  "description": "ESLint configuration for Vue 2, Vue 3, and for Vue 3 + Feature-Sliced Design projects, based on Airbnb config",
+  "version": "2.0.4",
+  "description": "ESLint configuration for Vue 3 + TS and for Vue 3 + TS + Feature-Sliced Design projects",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "eslintConfig": {
-    "vue-2": "./vue-2/index.js",
-    "vue-3": "./vue-3/index.js",
-    "vue-3-fsd": "./vue-3-fsd/index.js"
+    "base": "./base/index.js",
+    "fsd": "./fsd/index.js"
   },
   "repository": {
     "type": "git",
@@ -18,32 +17,26 @@
   "keywords": [
     "eslint",
     "vue",
-    "vue2",
     "vue3",
     "feature-sliced design"
   ],
   "author": "rkorzhoff",
   "license": "ISC",
   "dependencies": {
-    "@conarti/eslint-plugin-feature-sliced": "^1.0.5",
     "@feature-sliced/eslint-config": "0.1.0-beta.6",
-    "@rushstack/eslint-patch": "^1.6.1",
-    "@typescript-eslint/eslint-plugin": "^6.16.0",
-    "@typescript-eslint/parser": "^6.16.0",
-    "@vue/eslint-config-airbnb-with-typescript": "^7.0.1",
-    "eslint": "^8.56.0",
-    "eslint-config-airbnb-base": "^15.0.0",
-    "eslint-config-airbnb-typescript": "^17.1.0",
+    "@rushstack/eslint-patch": "^1.7.2",
+    "@vue/eslint-config-prettier": "^9.0.0",
+    "@vue/eslint-config-typescript": "^12.0.0",
+    "eslint": "^8.57.0",
     "eslint-import-resolver-custom-alias": "^1.3.2",
     "eslint-import-resolver-typescript": "^3.6.1",
-    "eslint-plugin-boundaries": "^4.0.1",
+    "eslint-plugin-boundaries": "^4.2.0",
     "eslint-plugin-eslint-comments": "^3.2.0",
     "eslint-plugin-import": "^2.29.1",
     "eslint-plugin-promise": "^6.1.1",
-    "eslint-plugin-sonarjs": "^0.23.0",
-    "eslint-plugin-ts-ignore-limit": "^1.0.0",
-    "eslint-plugin-tsdoc": "^0.2.17",
-    "eslint-plugin-vue": "^9.19.2",
-    "typescript": "^5.3.3"
+    "eslint-plugin-sonarjs": "^0.24.0",
+    "eslint-plugin-vue": "^9.22.0",
+    "typescript": "^5.3.3",
+    "typescript-eslint": "^7.1.1"
   }
 }

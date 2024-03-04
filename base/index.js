@@ -5,29 +5,31 @@ module.exports = {
   env: {
     node: true,
   },
+  settings: {
+    "import/resolver": {
+      typescript: {
+        alwaysTryTypes: true,
+      },
+    },
+  },
   extends: [
-    "airbnb-base",
     "plugin:import/recommended",
     "plugin:import/typescript",
-    "@vue/eslint-config-airbnb-with-typescript",
     "plugin:sonarjs/recommended",
+    "eslint:recommended",
+    "plugin:vue/vue3-strongly-recommended",
+    "@vue/eslint-config-typescript/recommended",
+    "@vue/eslint-config-prettier",
   ],
-  parser: "@typescript-eslint/parser",
+  parser: "vue-eslint-parser",
   parserOptions: {
-    ecmaVersion: "latest",
-    extraFileExtensions: [".vue"],
     parser: "@typescript-eslint/parser",
+    ecmaVersion: 2020,
     sourceType: "module",
+    project: "./tsconfig.json",
   },
 
-  plugins: [
-    "vue",
-    "eslint-comments",
-    "promise",
-    "sonarjs",
-    "eslint-plugin-tsdoc",
-    "ts-ignore-limit",
-  ],
+  plugins: ["vue", "promise", "sonarjs"],
 
   rules: {
     // default
@@ -37,7 +39,6 @@ module.exports = {
     "no-param-reassign": "off",
     "no-restricted-globals": "off",
     "no-throw-literal": "off",
-    "tsdoc/syntax": "warn",
     "arrow-body-style": "off",
     "implicit-arrow-linebreak": "off",
     "no-plusplus": ["error", { allowForLoopAfterthoughts: true }],
@@ -54,6 +55,8 @@ module.exports = {
     "no-spaced-func": "off",
     "func-call-spacing": "off",
     "default-param-last": "off",
+    "no-restricted-syntax": "off",
+    "generator-star-spacing": "off",
 
     //import
     "import/prefer-default-export": "off",
@@ -67,7 +70,6 @@ module.exports = {
     "@typescript-eslint/quotes": "off",
     "@typescript-eslint/no-use-before-define": "off",
     "@typescript-eslint/no-shadow": ["error"],
-    "@typescript-eslint/no-explicit-any": ["error"],
     "@typescript-eslint/no-explicit-any": ["error"],
     "@typescript-eslint/ban-ts-comment": [
       "error",
@@ -92,6 +94,8 @@ module.exports = {
     "@typescript-eslint/no-duplicate-type-constituents": "error",
     "@typescript-eslint/no-unused-vars": ["error", { argsIgnorePattern: "^_" }],
     "@typescript-eslint/semi": "off",
+    "@typescript-eslint/naming-convention": "off",
+
 
     // vue
     "vue/html-indent": "off",
@@ -101,6 +105,7 @@ module.exports = {
     "vue/require-v-for-key": "off",
     "vue/valid-v-for": "off",
     "vue/html-button-has-type": "off",
+    "vue/multi-word-component-names": "off",
     "vue/block-order": [
       "error",
       {

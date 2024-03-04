@@ -1,25 +1,16 @@
 # ESLint config for Vue projects
-ESLint configuration for Vue 2, Vue 3, and for Vue 3 + Feature-Sliced Design projects, based on Airbnb config.
+ESLint configuration for Vue 3 + TS, and for Vue 3 + TS + Feature-Sliced Design projects.
 ## Installation
 ```
 npm install eslint-config-aurora-vue --save-dev
 ```
 ## Usage
-For Vue 2 projects:
-```js
-// .eslintrc.js
-module.exports = {
-  extends: [
-    "aurora-vue/vue-2"
-  ],
-};
-```
 For Vue 3 projects:
 ```js
 // .eslintrc.js
 module.exports = {
   extends: [
-    "aurora-vue/vue-3"
+    "aurora-vue/base"
   ],
 };
 ```
@@ -28,7 +19,7 @@ For Vue 3 projects with Feature-Sliced Design:
 // .eslintrc.js
 module.exports = {
   extends: [
-    "aurora-vue/vue-3-fsd"
+    "aurora-vue/fsd"
   ],
 };
 ```
