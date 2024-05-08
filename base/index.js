@@ -62,7 +62,7 @@ module.exports = {
     "import/prefer-default-export": "off",
     "import/no-cycle": "off",
     "import/no-extraneous-dependencies": "off",
-
+    "import/no-unresolved": ["error", { ignore: ["^virtual:"] }],
     // @typescript-eslint
     "@typescript-eslint/no-throw-literal": "off",
     "@typescript-eslint/indent": "off",
@@ -95,7 +95,6 @@ module.exports = {
     "@typescript-eslint/no-unused-vars": ["error", { argsIgnorePattern: "^_" }],
     "@typescript-eslint/semi": "off",
     "@typescript-eslint/naming-convention": "off",
-
 
     // vue
     "vue/html-indent": "off",
