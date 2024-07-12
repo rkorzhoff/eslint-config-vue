@@ -10,6 +10,13 @@ module.exports = {
       typescript: {
         alwaysTryTypes: true,
       },
+      node: {
+        paths: ["src"],
+        extensions: [".js", ".ts", ".d.ts", ".vue"],
+      },
+      typescript: {
+        project: "./tsconfig.json",
+      },
     },
   },
   extends: [
@@ -111,6 +118,9 @@ module.exports = {
         order: ["script", "template", "style"],
       },
     ],
+
+    // sonarjs
+    "sonarjs/no-duplicate-string": "off",
   },
 
   overrides: [

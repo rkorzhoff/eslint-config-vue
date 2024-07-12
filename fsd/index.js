@@ -1,4 +1,3 @@
-const path = require("path");
 module.exports = {
   extends: [
     "../base",
@@ -17,10 +16,6 @@ module.exports = {
       },
       typescript: {
         project: "./tsconfig.json",
-      },
-      alias: {
-        map: [["@", path.resolve(__dirname, "./src")]],
-        extensions: [".js", ".ts", ".d.ts", ".vue"],
       },
     },
   },
