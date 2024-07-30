@@ -64,6 +64,7 @@ module.exports = {
     "default-param-last": "off",
     "no-restricted-syntax": "off",
     "generator-star-spacing": "off",
+    "no-console": "warn",
 
     //import
     "import/prefer-default-export": "off",
