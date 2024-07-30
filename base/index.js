@@ -65,6 +65,7 @@ module.exports = {
     "no-restricted-syntax": "off",
     "generator-star-spacing": "off",
     "no-console": "warn",
+    eqeqeq: "error",
 
     //import
     "import/prefer-default-export": "off",
