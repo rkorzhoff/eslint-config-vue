@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-aurora-vue",
-  "version": "2.0.17",
+  "version": "2.0.18",
   "description": "ESLint configuration for Vue 3 + TS and for Vue 3 + TS + Feature-Sliced Design projects",
   "main": "index.js",
   "scripts": {
