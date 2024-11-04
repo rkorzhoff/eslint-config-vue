@@ -1,28 +1,32 @@
 # ESLint config for Vue projects
-ESLint configuration for Vue 3 + TS, and for Vue 3 + TS + Feature-Sliced Design projects.
+ESLint configuration for Typescript, Vue 3 + TS, and for Vue 3 + TS + Feature-Sliced Design projects.
 ## Installation
 ```
 npm install eslint-config-aurora-vue --save-dev
 ```
 ## Usage
+For TypeScript projects:
+```js
+// eslint.config.js
+import auroraPlugin from 'eslint-config-aurora-vue'
+
+export default [
+  ...auroraPlugin.configs.base,
+  ...
+]
+```
 For Vue 3 projects:
 ```js
-// .eslintrc.js
-module.exports = {
-  extends: [
-    "aurora-vue/base"
-  ],
-};
+// eslint.config.js
+import auroraPlugin from 'eslint-config-aurora-vue'
+
+export default [
+  ...auroraPlugin.configs.vue,
+  ...
+]
 ```
-For Vue 3 projects with Feature-Sliced Design:
-```js
-// .eslintrc.js
-module.exports = {
-  extends: [
-    "aurora-vue/fsd"
-  ],
-};
-```
+For Vue 3 projects with Feature-Sliced Design work is still in progress
+
 ## Contributing
 If you would like to contribute to the project, please follow these guidelines.
 
