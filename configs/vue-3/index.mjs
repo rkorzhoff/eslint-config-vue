@@ -50,6 +50,8 @@ export default tseslint.config(
           order: ['script', 'template', 'style'],
         },
       ],
+      'vue/prop-name-casing': ['warn', 'camelCase'],
+      'vue/component-name-in-template-casing': ['warn', 'PascalCase'],
 
       /**
        * -----------------------|
