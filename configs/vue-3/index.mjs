@@ -51,7 +51,7 @@ export default tseslint.config(
         },
       ],
       'vue/prop-name-casing': ['warn', 'camelCase'],
-      'vue/component-name-in-template-casing': ['warn', 'PascalCase'],
+      'vue/component-name-in-template-casing': ['warn', 'PascalCase', { registeredComponentsOnly: false }],
 
       /**
        * -----------------------|
