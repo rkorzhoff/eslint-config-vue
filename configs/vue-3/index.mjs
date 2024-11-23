@@ -52,6 +52,18 @@ export default tseslint.config(
       ],
       'vue/prop-name-casing': ['warn', 'camelCase'],
       'vue/component-name-in-template-casing': ['warn', 'PascalCase', { registeredComponentsOnly: false }],
+      'vue/html-self-closing': [
+        'warn',
+        {
+          html: {
+            void: 'never',
+            normal: 'always',
+            component: 'always',
+          },
+          svg: 'always',
+          math: 'always',
+        },
+      ],
 
       /**
        * -----------------------|
