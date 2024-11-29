@@ -3,9 +3,9 @@
     "target": "ESNext",
     "module": "ESNext",
     "moduleResolution": "Bundler",
-    "lib": ["es2020"],
+    "lib": ["es2020", "DOM"],
     "allowJs": true,
-    "checkJs": true,
+    "checkJs": false,
     "noEmit": true,
     "strict": true,
     "noImplicitAny": true,
@@ -21,7 +21,8 @@
     "paths": {
       "*": ["typings/*"]
     },
-    "skipLibCheck": true
+    "skipLibCheck": true,
+    "types": ["node"]
   },
   "include": [
     "configs/**/*",

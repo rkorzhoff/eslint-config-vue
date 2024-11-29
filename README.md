@@ -25,7 +25,17 @@ export default [
   ...
 ]
 ```
-For Vue 3 projects with Feature-Sliced Design work is still in progress
+
+For Vue 3 projects with FSD:
+```js
+// eslint.config.js
+import auroraPlugin from 'eslint-config-aurora-vue'
+
+export default [
+  ...auroraPlugin.configs.fsd,
+  ...
+]
+```
 
 ## Contributing
 If you would like to contribute to the project, please follow these guidelines.
